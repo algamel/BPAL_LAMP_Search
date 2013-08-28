@@ -1,6 +1,6 @@
 <?php 
 
-mysql_connect('localhost', 'root', 'p')
+mysql_connect('localhost', 'WebUser', 'p')
 or die("<p>Error connecting to database: " . mysql_error() . " </p>");
 
 mysql_select_db('BPAL')
