@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 5 " "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" >
+<link href="optimus.css" type="text/css" rel="stylesheet">
+<title>Hoarder Search</title>
+<script type="text/javascript">
+
+function TextAreaFill(MySelection) {
+    var textarea = document.getElementById("TextArea");
+    textarea.value = MySelection;
+  }
+
+</script>
+</head>
+
+<body>
+<center><img src="titletop.gif"> <br>
+<div id='header'><h1>Hoarder Search!</h1></div><br></center>
+<h2>Search your stash</h2><br>
+<select id="SearchChooser" name="SearchSelector" style="width: 155px; height: 20px" title="Search By:">
+<option onclick="TextAreaFill(this.value)" value="Select ScentName, Collection, Description FROM 5mls WHERE Description LIKE '%Vanilla%';">Description
+</option>
+<option onclick="TextAreaFill(this.value)" value="Select ScentName, Collection, Description FROM 5mls WHERE Collection LIKE '%Carnival%';">Collection
+</option>
+<option onclick="TextAreaFill(this.value)" value="Select ScentName, Collection, Description FROM 5mls WHERE ScentName LIKE '%Snake Oil%';">Name
+</option>
+</select><p>&nbsp;</p>
+
+<form action='run_query.php' method="post">
+	<textarea id="TextArea" name="TextArea1" style="width: 378px; height: 187px" title="Enter SQL SELECT Query">Select ScentName, Collection, Description FROM 5mls WHERE Description LIKE '%Vanilla%';</textarea>
+
+<fieldset class="center">
+<input type="submit" value="Run Query" />
+<input type="reset" value="Clear and Restart" />
+
+</fieldset>
+</form>
+</body>
+
+</html>

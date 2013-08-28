@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type='text/css'>
+    body {
+        background-color:#fff;
+        font:0.8em Georgia;
+        line-height:140%;
+        color:#424242;
+        margin:0 0 15px 0;
+    }
+    a img {
+        border:none;
+    }
+    a {
+        text-decoration:none;
+        color:{color:Link};
+    }
+    a:hover {
+        color:#424242;
+    }
+    h1 {
+        margin:0;
+        padding:0 0 10px 0;
+        font-size:2em;
+        
+    }
+    h3 {
+        margin:0 0 8px 0;
+        padding:0;
+        font-size:1.1em;
+    }
+    p {
+        margin:10px 0;
+        padding:0;
+    }
+    #wrapper {
+        width:632px;
+        margin:0 auto;
+    }
+    #header {
+        background:#f8f8f8;
+        border-bottom:1px solid #eee;
+        padding:15px 0;
+        margin:0 0 20px 0;
+    }
+    #headerContent {
+        width:632px;
+        margin:0 auto;
+    }
+    #headerContent h1 a {
+        color:#424242;
+    }
+    #headerContent h1,
+    #headerContent p {
+        padding:0;
+        margin:0;
+    }
+    #headerContent p {
+        padding-top:10px;
+    }
+table {
+	border: padding:15px 0;
+	table-layout: auto;
+	font-family: 
+
+</style>sans-serif;
+}
